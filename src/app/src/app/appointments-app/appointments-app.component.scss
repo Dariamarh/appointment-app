@@ -1,0 +1,42 @@
+.appointments-app {
+    margin-top: 50px;
+
+    .add-button {
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 50px;
+        margin-left: 80px;
+        cursor: pointer;
+    }
+
+    .appointments {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        .appointments-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px;
+        }
+
+        table {
+            display: flex;
+
+            tr {
+                border: 1px solid;
+                font-size: 20px;
+                padding: 10px;
+                width: 300px;
+            }
+        }
+
+        button {
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

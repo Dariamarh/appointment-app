@@ -1,0 +1,24 @@
+<section class="appointments-app">
+    <button class="add-button" (click)="onAddAppointment()">Add Appointment</button>
+    <div class="appointments">
+        <div class="appointments-info" *ngFor="let appointment of appointments">
+            <table>
+                <tr>
+                    <td>{{appointment.subject}}</td>
+                </tr>
+                <tr>
+                    <td>{{appointment.starttime}}</td>
+                </tr>
+                <tr>
+                    <td>{{appointment.enddtime}}</td>
+                </tr>
+                <tr>
+                    <td>{{appointment.users}}</td>
+                </tr>
+                <button (click)="onRemoveAppointment(appointment.id)">X</button>
+
+            </table>
+
+        </div>
+    </div>
+</section>
